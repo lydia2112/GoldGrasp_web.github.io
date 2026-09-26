@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="creer.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | Register </title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">
+        <p> GOLD GRASP </p>
+        
+    </div>
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li>
+                <a href="gestionCompte.html" class="link ">Home</a></li>
+            <li>
+                <a href="creerCompte.html" class="link active">Register</a></li>
+            <li>
+                <a href="transaction.html" class="link ">Transaction</a></li>
+            <li>
+                <a href="movement.html" class="link ">Movement</a></li>
+            <li>
+                <a href="abou.html" class="link">About</a></li>
+            <li>
+               
+                    <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                               <img src="C:\Users\dell\Desktop\login & regestration\images\user.png" >
+                               <h2>RAMDA Lydia</h2>
+                            </div> 
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\profile.png" >
+                                <p>Edite Profile</p>
+                                <span>></span>
+                            </a>
+                            
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\help.png" >
+                                <p>Helps & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\logout.png" >
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </li>
+        </ul>
+       
+    </div>
+    
+    
+</nav> 
+    <section class="container">
+        <header>
+            <h4>CREATION DU COMPTE BANCAIRE</h4> </header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label>Nom complet</label>
+                <input required="" placeholder="Entrer votre nom complet " type="text">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                  <label>Numéro Telephone </label>
+                  <input required="" placeholder="Entrer votre numéro telephone" type="telephone">
+                </div>
+                <div class="input-box">
+                  <label>Date Naissance </label>
+                  <input required="" placeholder="Entrer votre  date naissance" type="date">
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Email </label>
+                <input required="" placeholder="Entrer votre adresse email (exemple: nom.prenom@gmail.com)" type="text">
+            </div>
+            <div class="gender-box">
+              <label>Civilité</label>
+              <div class="gender-option">
+                <div class="gender">
+                  <input  name="gender" id="check-male" type="radio">
+                  <label for="check-male">M.</label>
+                </div>
+                <div class="gender">
+                  <input name="gender" id="check-female" type="radio">
+                  <label for="check-female">Mme.</label>
+                </div>
+                <div class="gender">
+                    <input name="gender" id="check-female" type="radio">
+                    <label for="check-female">Mlle.</label>
+                  </div>
+              
+              </div>
+            </div>
+            <div class="input-box address">
+              <label>Address</label>
+              <input required="" placeholder="Entre votre address " type="text">
+              <div class="column">
+                <div class="select-box">
+                  <select>
+                    <option hidden="">Pays</option>
+                    <option>DZ</option>
+                    <option>FR</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                  </select>
+                </div>
+              <input required="" placeholder="Code postale" type="text">
+              </div>
+            </div>
+            <button>Créer</button>
+        </form>
+      </section>  
+      <script>
+
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script> 
+</body>
+</html>

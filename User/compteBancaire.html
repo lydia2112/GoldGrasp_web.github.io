@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="stylesheet" href="compteB.css">
+    <title>GoldGrasp | Compte  </title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p> GOLD GRASP </p>
+                
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li>
+                        <a href="home.html" class="link ">Home</a></li>
+                   
+                    <li>
+                        <a href="Services.html" class="link active">Services</a></li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a></li>
+                    <li>
+                        <a href="About.html" class="link">About</a></li>
+                    <li>
+                       
+                            <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                       <img src="images/user.png" >
+                                       <h2>RAMDA Lydia</h2>
+                                    </div> 
+                                    <hr>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/profile.png" >
+                                        <p>Edite Profile</p>
+                                        <span>></span>
+                                    </a>
+                                    
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/help.png" >
+                                        <p>Helps & Support</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/logout.png" >
+                                        <p>Logout</p>
+                                        <span>></span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                </ul>
+               
+            </div>
+            
+            
+        </nav> 
+    <div class="card">
+        <div class="card__title">Mes informations </div>
+        <div class="card__data">
+          <div class="card__right">
+            <div class="item">Numere de Compte </div>
+            <div class="item">RIB : </div>
+            <div class="item">NOM :</div>
+            <div class="item">Prenom: </div>
+            <div class="item">Date de naissance : </div>
+            <div class="item">Adress : </div>
+            <div class="item">Tel : </div>
+            <div class="item">status</div>
+          </div>
+          <div class="card__left">
+            <div class="item">97866577</div>
+            <div class="item">8677576575</div>
+            <div class="item">RAMDA</div>
+            <div class="item">LYdia</div>
+            <div class="item">26/09/2032</div>
+            <div class="item"> Bejaia  </div>
+            <div class="item">0655493760</div>
+            <div class="item">Active </div>
+          </div>
+        </div>
+      </div>
+      <script>
+
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+        
+</body>
+</html>

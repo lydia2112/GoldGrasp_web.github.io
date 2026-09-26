@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="movement.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | Mouvement </title>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Année', 'Dépot', 'Retrait', 'Intéret'],
+          ['2020',  66000, 72000, 20000],
+          ['2021', 117000, 46000, 75000],
+          ['2022', 100000, 40000, 35000],
+          ['2023', 103000, 54000, 37500]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Mouvement Des Comptes Bancaires',
+            subtitle: 'Dépot, Retrait, and Intéret: 2020-2023',
+            is3D: true,
+          }
+          
+        
+        };
+       
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      
+    </script>
+     
+    <script type="text/javascript">
+       google.charts.load("current", {packages:["corechart"]});
+       google.charts.setOnLoadCallback(drawChart);
+       function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+           ['Task', 'Euros per year'],
+           ['Actifs représentatifs d operation de marché',1654000],
+           ['Prets', 5855000],
+           ['Autre',  527000],
+           ['Actifs léquides', 1489000],
+           ['Gestion actif-passif',716000]
+         ]);
+ 
+         var options = {
+           title: 'Structure de l’actif bancaire à fin 2023 et 2022  ',
+           is3D: true,
+         };
+ 
+         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+         chart.draw(data, options);
+       }
+     </script>
+
+
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">
+        <p> GOLD GRASP </p>
+        
+    </div>
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li>
+                <a href="gestionCompte.html" class="link ">Home</a></li>
+            <li>
+                <a href="creerCompte.html" class="link ">Register</a></li>
+            <li>
+                <a href="transaction.html" class="link ">Transaction</a></li>
+            <li>
+                <a href="movement.html" class="link active " >Mouvement</a></li>
+            <li>
+                <a href="abou.html" class="link">About</a></li>
+            <li>
+               
+                    <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                               <img src="C:\Users\dell\Desktop\login & regestration\images\user.png" >
+                               <h2>RAMDA Lydia</h2>
+                            </div> 
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\profile.png" >
+                                <p>Edite Profile</p>
+                                <span>></span>
+                            </a>
+                            
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\help.png" >
+                                <p>Helps & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="C:\Users\dell\Desktop\login & regestration\images\logout.png" >
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </li>
+        </ul>
+       
+    </div>
+    
+    
+</nav> 
+<div>
+    
+      <div id="columnchart_material" style="width: 800px; height: 500px; margin-top: 8%; 
+     margin-left: 20%;"></div>
+     
+  
+    
+      <div id="piechart_3d" style="width: 800px; height: 500px; margin-top: 5%; margin-left: 20%;"></div>
+     
+ </div>
+<script>
+
+    let subMenu =document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script> 
+
+  
+
+</body>
+</html>

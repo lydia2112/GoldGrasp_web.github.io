@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relever.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | RELEVÉ DE COMPTE</title>
+ </head>
+ <body>
+     <div class="crud">
+        <div class="head">
+            <h2>Gold Grasp</h2>
+            
+        </div>
+        <form class="form_container">
+          
+          <div class="title_container">
+            <p class="title">ESPACE DEMANDE DU RELEVÉ DE COMPTE</p>
+            <span class="subtitle">Demandez votre relevé de compte et obtienez le en quelque clique seulememnt</span>
+          </div>
+          <br>
+          <div class="input_container">
+            <label class="input_label" for="debut">Relevé Du </label>
+            
+            <input title="Inpit title" type="date" class="input_field" id="debut">
+          </div>
+          <div class="input_container">
+            <label class="input_label" for="fin">Au</label>
+            
+            <input  title="date"  type="date" class="input_field" id="fin">
+          </div>
+          <button type="button" class="shadow_btn"  onclick="affiche()">
+            Demander
+          </button>
+        
+          
+        
+         
+          <p class="note">Terms of use &amp; Conditions</p>
+
+        </form>
+      
+      </div>  
+   <script>
+         function affiche() {
+        
+          window.location.href = "afficher.html";
+          }
+    </script>
+  
+ </body>
+</html>

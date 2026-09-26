@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | Home </title>
+</head>
+<body>
+   <nav class="nav">
+      <div class="nav-logo">
+          <p> GOLD GRASP </p>
+          
+      </div>
+      <div class="nav-menu" id="navMenu">
+          <ul>
+              <li>
+                  <a href="gestionCompte.html" class="link active ">Home</a></li>
+              <li>
+                  <a href="creerCompte.html" class="link ">Register</a></li>
+              <li>
+                  <a href="transaction.html" class="link ">Transaction</a></li>
+              <li>
+                  <a href="movement.html" class="link ">Mouvement</a></li>
+              <li>
+                  <a href="abou.html" class="link">About</a></li>
+              <li>
+                 
+                      <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                      <div class="sub-menu-wrap" id="subMenu">
+                          <div class="sub-menu">
+                              <div class="user-info">
+                                 <img src="C:\Users\dell\Desktop\login & regestration\images\user.png" >
+                                 <h2>RAMDA Lydia</h2>
+                              </div> 
+                              <hr>
+                              <a href="#" class="sub-menu-link">
+                                  <img src="C:\Users\dell\Desktop\login & regestration\images\profile.png" >
+                                  <p>Edite Profile</p>
+                                  <span>></span>
+                              </a>
+                              
+                              <a href="#" class="sub-menu-link">
+                                  <img src="C:\Users\dell\Desktop\login & regestration\images\help.png" >
+                                  <p>Helps & Support</p>
+                                  <span>></span>
+                              </a>
+                              <a href="#" class="sub-menu-link">
+                                  <img src="C:\Users\dell\Desktop\login & regestration\images\logout.png" >
+                                  <p>Logout</p>
+                                  <span>></span>
+                              </a>
+  
+                          </div>
+  
+                      </div>
+                  </li>
+          </ul>
+         
+      </div>
+      
+      
+  </nav> 
+  <div class="crud">
+       
+        <div class="head">
+            
+            <h3>BANCK ACCOUNT MANAGEMENT SYSTEM</h3>
+        </div>
+        
+        
+      
+        <hr>
+        <div class="outputs">
+           <div class="rechercher">
+             <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input placeholder="Search" type="search" class="input">
+             </div>
+              <div class="btnSearch">
+                 <button class="chercheNom">NOM&PRENOM</button>
+                 <button class="chercheNumcpt">NUM-COMPTE</button>
+                </div>
+
+            </div>
+            <hr>
+            <h4 class="aff">RESULTAT DE VOTRE RECHERCHE : </h4>
+            <table>
+             <thead>
+              <tr>
+                <th>ID</th>
+                <th>Status</th>
+                <th>NOM</th>
+                <th>Prenom</th>
+                <th>DateNaiss</th>
+                <th>Adress</th>
+                <th>Code-Banque</th>
+                <th>Num-Compte</th>
+                <th>Cle</th>
+                <th>Solde</th>
+                <th>update</th>
+                <th>delete</th>
+               </tr>
+              </thead>
+               <tbody>
+                 <tr>
+                    <td>1</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete" >delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>13</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>08</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>26</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>70</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+                 <tr>
+                    <td>99</td>
+                    <td>particulier</td>
+                    <td>RAMDA</td>
+                    <td>Lydia</td>
+                    <td>07/01/2002</td>
+                    <td>Bejaia</td>
+                    <td>370</td>
+                    <td>4580017189</td>
+                    <td>89</td>
+                    <td>200$</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                 </tr>
+               </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script>
+
+      let subMenu =document.getElementById("subMenu");
+      function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+      }
+  </script> 
+</body>
+</html>

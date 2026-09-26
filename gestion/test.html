@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Année', 'Dépot', 'Retrait', 'Intéret'],
+          ['2020', 1000, 400, 200],
+          ['2021', 1170, 460, 250],
+          ['2022', 660, 1120, 300],
+          ['2023', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Mouvement Des Comptes Bancaires',
+            subtitle: 'Dépot, Retrait, and Intéret: 2020-2023',
+          }
+          
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      
+    </script>
+     
+    <script type="text/javascript">
+       google.charts.load("current", {packages:["corechart"]});
+       google.charts.setOnLoadCallback(drawChart);
+       function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+           ['Task', 'Euros per year'],
+           ['Actifs représentatifs d operation de marché',1654],
+           ['Prets', 5855],
+           ['Autre',  527],
+           ['Actifs léquides', 1489],
+           ['Gestion actif-passif',716]
+         ]);
+ 
+         var options = {
+           title: 'Structure de l’actif bancaire à fin 2023 et 2022  ',
+           is3D: true,
+         };
+ 
+         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+         chart.draw(data, options);
+       }
+     </script>
+
+
+
+
+  
+  
+  
+  </head>
+  <body  margin: 0;
+  padding: 0;>
+   <div>
+      <div id="columnchart_material" style="width: 800px; height: 500px; margin-top: 5%; 
+       margin-left: 20%;"></div>
+      <div id="piechart_3d" style="width: 800px; height: 500px; margin-top: 5%; margin-left: 20%;"></div>
+   </div>
+  </body>
+</html>

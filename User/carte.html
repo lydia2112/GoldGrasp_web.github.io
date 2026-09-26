@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="carte.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | Carte Bancaire </title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p> GOLD GRASP </p>
+                
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li>
+                        <a href="home.html" class="link ">Home</a></li>
+                    
+                    <li>
+                        <a href="Services.html" class="link active">Services</a></li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a></li>
+                    <li>
+                        <a href="About.html" class="link">About</a></li>
+                    <li>
+                       
+                            <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                       <img src="images/user.png" >
+                                       <h2>RAMDA Lydia</h2>
+                                    </div> 
+                                    <hr>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/profile.png" >
+                                        <p>Edite Profile</p>
+                                        <span>></span>
+                                    </a>
+                                    
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/help.png" >
+                                        <p>Helps & Support</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/logout.png" >
+                                        <p>Logout</p>
+                                        <span>></span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                </ul>
+               
+            </div>
+            
+            
+        </nav> 
+        
+        <div class="modal">
+          <form class="form">
+            <div class="visa-card">
+              <div class="logoContainer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 48 48"
+                  class="svgLogo"
+                >
+                  <path
+                    fill="#ff9800"
+                    d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+                  ></path>
+                  <path
+                    fill="#d50000"
+                    d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+                  ></path>
+                  <path
+                    fill="#ff3d00"
+                    d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="number-container">
+                <label class="input-label" for="cardNumber">CARD NUMBER</label>
+                <input
+                  class="inputstyle"
+                  id="cardNumber"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                  name="cardNumber"
+                  type="text" 
+                />
+              </div>
+            
+              <div class="name-date-cvv-container">
+                <div class="name-wrapper">
+                  <label class="input-label" for="holderName">CARD HOLDER</label>
+                  <input
+                    class="inputstyle"
+                    id="holderName"
+                    placeholder="Mlle RAMDA LYDIA"
+                    type="text"
+                  />
+                </div>
+            
+                <div class="expiry-wrapper">
+                  <label class="input-label" for="expiry">VALID THRU</label>
+                  <input class="inputstyle" id="expiry" placeholder="09/24" type="text" />
+                </div>
+                <div class="cvv-wrapper">
+                  <label class="input-label" for="cvv">CVV</label>
+                  <input
+                    class="inputstyle"
+                    placeholder="***"
+                    maxlength="3"
+                    id="cvv"
+                    type="password"
+                  />
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="separator">
+              <hr class="line">
+              <p>card informations </p>
+              <hr class="line">
+            </div>
+            <div class="credit-card-info--form">
+              <div class="input_container">
+                <label for="password_field" class="input_label">Card holder full name</label>
+                <input id="password_field" class="input_field" type="text" name="input-name" 
+                title="Inpit title" placeholder="RAMDA LYDIA" readonly>
+              </div>
+              <div class="input_container">
+                <label for="password_field" class="input_label">Card Number</label>
+                <input id="password_field" class="input_field" type="number" name="input-name"
+                 title="Inpit title" placeholder="0000 0000 0000 0000" readonly>
+              </div>
+              <div class="input_container">
+                <label for="password_field" class="input_label">Expiry Date / CVV</label>
+                <div class="split">
+                <input id="password_field" class="input_field" type="text" name="input-name" 
+                title="Expiry Date" placeholder="09/24" readonly>
+                <input id="password_field" class="input_field" type="number" name="cvv" 
+                title="CVV" placeholder="997" readonly>
+              </div>
+              </div>
+            </div>
+              <button class="purchase--btn">Bloquer</button>
+          </form>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+       
+     
+      </div>
+      <script>
+
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

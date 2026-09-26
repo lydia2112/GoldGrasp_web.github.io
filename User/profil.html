@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profil.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>GoldGrasp | Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p> GOLD GRASP </p>
+                
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li>
+                        <a href="home.html" class="link active">Home</a></li>
+                    <li>
+                        <a href="blog.html" class="link">Blog</a></li>
+                    <li>
+                        <a href="Services.html" class="link">Services</a></li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a></li>
+                    <li>
+                        <a href="About.html" class="link">About</a></li>
+                    <li>
+                       
+                            <a href="profil.html" class="link active" onclick="toggleMenu()">Profile</a>
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                       <img src="images/user.png" >
+                                       <h2>RAMDA Lydia</h2>
+                                    </div> 
+                                    <hr>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/profile.png" >
+                                        <p>Edite Profile</p>
+                                        <span>></span>
+                                    </a>
+                                    
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/help.png" >
+                                        <p>Helps & Support</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/logout.png" >
+                                        <p>Logout</p>
+                                        <span>></span>
+                                    </a>
+                        
+                                </div>
+                        
+                            </div> 
+                        </li>
+                </ul>
+               
+            </div>
+            
+            
+        </nav> 
+       
+
+     </div>
+   
+    <script>
+
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

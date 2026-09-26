@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: rgb(225, 224, 219);
+    color: black;
+    font-family: system-ui;
+
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+
+}
+
+.client {
+    width: 100%;
+
+}
+
+
+
+
+.periode{
+    font-size: 13px;
+    width: 30%;
+    height: 5px;
+    margin-top: 1%;
+    margin-right: 10px;
+    float: right;
+
+}
+.periode .p1{
+    font-size: 11px;
+}
+thead tr {
+    background-color: midnightblue;
+    color: #fff;
+    text-align: left;
+}
+tbody tr, td, th {
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+.statement{
+    
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table{
+    
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+   
+    text-transform: uppercase;
+}
+th,td{
+    
+    padding: 5px;
+}
+.editer{
+    width: 100%;
+}
+fieldset{
+    margin: 3% 5%;
+    border-color:#1b52c7;
+    padding:0 0 0 2px;
+}
+.coordonne{
+   
+    margin: 2% 10px;
+}
+.bank{
+   color: rgb(253, 149, 3);
+    margin-left: 10px;
+}
+.adress{
+    margin-left: 10px;
+}
+.titre{
+    font-size: large;
+    font-family: system-ui;
+    text-align: center;
+    margin: 10px 0;
+}
+.delivre{
+    margin-top: -25px;
+    float:right;
+    margin-right: 10px;
+}
+
+
+
+.imprimer {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #1163ff;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition:  0.3s;
+    overflow: hidden;
+    margin: 10px 20px;
+    float:right;
+    
+  }
+  
+  .imprimer::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+    
+  }
+  
+ 
+  
+ 
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imprimer-wrapper,.text {
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  .imprimer-wrapper {
+    cursor: pointer;
+    -webkit-background-clip: padding-box; /* Pour les anciennes versions de Webkit */
+    background-clip: padding-box; /* Pour la propriété standard */
+    /* Autres styles */
+}
+
+  
+  .text {
+    top: 0
+  }
+  
+  .text {
+    transition: top 0.5s;
+  }
+  
+
+  
+  
+  
+  

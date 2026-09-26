@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title> GoldGrasp | Blog</title>
+</head>
+<body>
+    <div>
+
+        <nav class="nav">
+            <div class="nav-logo">
+                <p> GOLD GRASP </p>
+                
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li>
+                        <a href="home.html" class="link ">Home</a></li>
+                    <li>
+                        <a href="blog.html" class="link active">Blog</a></li>
+                    <li>
+                        <a href="Services.html" class="link">Services</a></li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a></li>
+                    <li>
+                        <a href="About.html" class="link">About</a></li>
+                    <li>
+                       
+                            <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                       <img src="images/user.png" >
+                                       <h2>RAMDA Lydia</h2>
+                                    </div> 
+                                    <hr>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/profile.png" >
+                                        <p>Edite Profile</p>
+                                        <span>></span>
+                                    </a>
+                                    
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/help.png" >
+                                        <p>Helps & Support</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/logout.png" >
+                                        <p>Logout</p>
+                                        <span>></span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                </ul>
+               
+            </div>
+            
+            
+        </nav> 
+    </div>
+   
+    <div class="wrapper">
+        
+     
+    
+     <div class="head">
+        <h2 class="card__title">Changer votre relation avec l'argent </h2>
+      </div>
+        <div class="card1">
+            <p class="card1-p">Donnez un emploi à chaque dinars</p>
+            <div class="card1-countent">
+                <p>
+                    Que voulez-vous que votre argent fasse avant d’être à nouveau payé ? Donnez à chaque dinars 
+                    un travail pour voir clairement votre plan.
+                     C'est incroyable. 
+                </p>
+            </div>
+        </div>
+        <div class="card2">
+            <p class="card2-p">Acceptez vos vraies  dépenses </p>
+            <div class="card2-countent">
+                <p>
+                    Les dépenses non mensuelles comme les réparations automobiles et 
+                    les achats des Fêtes sont une réalité. 
+                    Décomposez-les en petits morceaux mensuels. 
+                </p>
+            </div>
+        </div>
+        <div class="card3">
+            <p class="card3-p">Encaisser les coups </p>
+            <div class="card3-countent">
+                <p>
+                    Il n’y a pas de mois normal. Être flexible. Lorsque la vie change, 
+                    modifiez votre plan de dépenses en conséquence.
+                     Aucune culpabilité n'est nécessaire : c'est votre argent !  
+                </p>
+            </div>
+        </div>
+      
+    </div>
+  
+    
+    
+    
+<script>
+
+    let subMenu =document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>

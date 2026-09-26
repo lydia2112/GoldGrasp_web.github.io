@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive HTML Church Website Template | CSS Flexbox Layout</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="home.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="icon" type="image/png" href="image/logo.png">
+	
+    <title>GoldGrasp | Home </title>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+            <div class="nav-logo">
+                <p> GOLD GRASP </p>
+                
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li>
+                        <a href="home.html" class="link  active ">Home</a></li>
+                
+                    <li>
+                        <a href="Services.html" class="link">Services</a></li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a></li>
+                    <li>
+                        <a href="About.html" class="link">About</a></li>
+                    <li>
+                       
+                            <a href="#" class="link" onclick="toggleMenu()">Profile</a>
+                            <div class="sub-menu-wrap" id="subMenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                       <img src="images/user.png" >
+                                       <h2>RAMDA Lydia</h2>
+                                    </div> 
+                                    <hr>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/profile.png" >
+                                        <p>Edite Profile</p>
+                                        <span>></span>
+                                    </a>
+                                    
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/help.png" >
+                                        <p>Helps & Support</p>
+                                        <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link">
+                                        <img src="images/logout.png" >
+                                        <p>Logout</p>
+                                        <span>></span>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                </ul>
+               
+            </div>
+            
+            
+        </nav> 
+	</header>
+	<section class="banner-area">
+
+
+		<div class="card">
+			<div class="image1"></div>
+			 <div class="content">
+			   <a href="#">
+				 <span class="title">
+					GoldGrasp vous accompagne
+				 </span>
+			   </a>
+		   
+			   <p class="desc">
+				Acquérir son premier bien immobilier, maîtriser son budget, traverser une période difficile, 
+				préparer sa retraite...
+				</p>
+		   
+			   <a class="action" href="#">
+				 Find out more
+				 <span aria-hidden="true">
+				   →
+				 </span>
+			   </a>
+			 </div>
+		</div>
+        <div class="card">
+			<div class="image2"></div>
+			 <div class="content">
+			   <a href="#">
+				 <span class="title">
+				    Vacances de printemps sereines
+				 </span>
+			   </a>
+		   
+			   <p class="desc">
+				Partez l'esprit tranquille.Avec la telesurveillance, Vous 
+				 n'avez pas a vous soucier de la securite de votre maison.
+			   </p>
+		   
+			   <a class="action" href="#">
+				 Find out more
+				 <span aria-hidden="true">
+				   →
+				 </span>
+			   </a>
+			 </div>
+		   </div>
+
+
+
+		   <div class="card">
+			 <div class="image"></div>
+			 <div class="content">
+			   <a href="#">
+				 <span class="title">
+				  Les bons plans dédiésaux étudiants
+				 </span>
+			   </a>
+		   
+			   <p class="desc">
+				 Un crédit vous engage et doit etre remboursé.
+				 Vérifiez capacités de remboursement avant de vous engager.
+			   </p>
+		   
+			   <a class="action" href="#">
+				 Find out more
+				 <span aria-hidden="true">
+				   →
+				 </span>
+			   </a>
+			 </div>
+		   </div>
+
+
+
+
+	</section>
+	<section class="about-area" id="about">
+		<h3 class="section-title">About <span>Us</span></h3>
+		<ul class="about-content">
+			<li class="about-left"></li>
+			<li class="about-right">
+				<h2>Your financial treasure starts here !</h2>
+				<p>GoldGrasp s'engage à offrir des solutions financières adaptées à vos besoins, 
+					avec sécurité et innovation pour votre tranquillité d'esprit.
+
+					   </p>
+				<p><i class="fa fa-arrow-right"></i> Consulter la synthèse de vos comptes</p>
+				<p><i class="fa fa-arrow-right"></i> Relevé détails de vos opérations</p>
+				<p><i class="fa fa-arrow-right"></i> Piloter votre carte bancaire</p>
+				
+			</li>
+		</ul>
+	</section>
+	<section class="msg-area">
+		<div class="msg-content">
+			<h2>Gouvernance & conformité</h2>
+			<p>
+				Retrouvez la composition de notre Conseil d'administration et du Comité exécutif, 
+				les 4 points clés de nos valeurs de Conformité et déontologie, les Informations financières et 
+				réglementées ainsi que la stratégie 
+				construisant le GoldGrasp de demain.</p>
+		</div>
+	</section>
+	<section class="services-area" id="services">
+		<h3 class="section-title">Our <span>Offers</span></h3>
+		<ul class="services-content">
+			<li>
+				<img alt="" src="images/1.jpg">
+				<h4>Emprunter</h4>
+				<p>Financier mes projets auto, travaux, etudes et meme les imprévus</p>
+			</li>
+			<li>
+				<img alt="" src="images/3.jpg">
+				<h4>Epargner</h4>
+				<p>Confiez la gestion de vos avoirs à nos experts.</p>
+			</li>
+			<li>
+				<img alt="" src="images/4.jpg">
+				<h4>S'assurer</h4>
+				<p>Naviguez et déplacez vous en toute    sérénité</p>
+			</li>
+		</ul>
+	</section>
+	<section class="contact-area" id="contact">
+		<h3 class="section-title">Our <span>Contact</span></h3>
+		<ul class="contact-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<p>02,Boulvard colonel Amirouche<br>
+					Alger</p>
+			</li>
+			<li>
+				<i class="fa fa-phone"></i>
+				<p>+213 456 789<br>
+				+213 456 123</p>
+			</li>
+			<li>
+				<i class="fa fa-envelope"></i>
+				<p>goldgrasp@gmail.com<br>
+				consceiller@website.com</p>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<p>All Right Reserved by Your Website</p>
+	</footer>
+</body>
+</html>
