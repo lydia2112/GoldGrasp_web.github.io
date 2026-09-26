@@ -1,4 +1,4 @@
-# Nom du Projet
+# GoldGrasp Web App
 
 ## Description
 
